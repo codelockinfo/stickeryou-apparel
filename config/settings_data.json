@@ -714,20 +714,8 @@
           "image_eDktL9": {
             "type": "image",
             "settings": {
-              "apply_overlay": true,
-              "content_position": "bottomLeft",
-              "subheading": "Slide title",
-              "title": "Tell your story",
-              "button_1_text": "",
-              "button_1_link": "",
-              "button_2_text": "",
-              "button_2_link": ""
-            }
-          },
-          "image_fyt7U6": {
-            "type": "image",
-            "settings": {
-              "apply_overlay": true,
+              "image": "shopify:\/\/shop_images\/USA_Website_1200x_54552a35-6438-486d-8857-09c6ea9b41e7.png",
+              "apply_overlay": false,
               "content_position": "bottomLeft",
               "subheading": "Slide title",
               "title": "Tell your story",
@@ -739,8 +727,7 @@
           }
         },
         "block_order": [
-          "image_eDktL9",
-          "image_fyt7U6"
+          "image_eDktL9"
         ],
         "settings": {
           "show_fullscreen": true,
