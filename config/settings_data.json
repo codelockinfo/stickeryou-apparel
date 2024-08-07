@@ -707,6 +707,49 @@
           "feed_width": 100,
           "html_area": ""
         }
+      },
+      "slideshow_pLAy9m": {
+        "type": "slideshow",
+        "blocks": {
+          "image_eDktL9": {
+            "type": "image",
+            "settings": {
+              "apply_overlay": true,
+              "content_position": "bottomLeft",
+              "subheading": "Slide title",
+              "title": "Tell your story",
+              "button_1_text": "",
+              "button_1_link": "",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          },
+          "image_fyt7U6": {
+            "type": "image",
+            "settings": {
+              "apply_overlay": true,
+              "content_position": "bottomLeft",
+              "subheading": "Slide title",
+              "title": "Tell your story",
+              "button_1_text": "",
+              "button_1_link": "",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "image_eDktL9",
+          "image_fyt7U6"
+        ],
+        "settings": {
+          "show_fullscreen": true,
+          "show_arrow": false,
+          "autoplay": true,
+          "cycle_speed": 5,
+          "text_color": "#ffffff",
+          "button_color": "#363636"
+        }
       }
     },
     "content_for_index": [
@@ -720,7 +763,8 @@
       "1649075007f82101d6",
       "164907614468bd4c05",
       "1649139500787f0b9d",
-      "1655005732ee88d13d"
+      "1655005732ee88d13d",
+      "slideshow_pLAy9m"
     ]
   },
   "presets": {
