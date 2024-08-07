@@ -1,0 +1,56 @@
+<div class="main-contain">
+  <div class="all-images">
+    <div class="multi-images">
+      <h2 class="add-text">{{ section.settings.heading }}</h2>
+    </div>
+     {%- for block in section.blocks -%}
+    <div class="multi image-holder touch-hover vertical">
+        <img class="mutli-display-img"src="{{ block.settings.image | img_url:'normal' }}">
+    </div>
+    {%- endfor -%}
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Multi Interiors",
+    "settings": [
+    {
+    "id": "heading",
+    "type": "text",
+    "label": "Heading"
+    }
+	],
+"blocks": [{
+"type": "Images",
+"name": "Images",
+"settings": [
+{
+"id" : "image",
+"type" : "image_picker",
+"label" : "Image"
+}
+]
+}],
+"presets":[
+{
+"name": "Multi Interiors"
+}
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+<style>
+  .add-text{
+    text-align: center;
+    clear: both;
+    font-family: "SolidAntiqueRomanPro", serif;
+    color: #bb2e12;
+    font-weight: 400;
+    font-size: 2.5rem;
+  }
+</style>

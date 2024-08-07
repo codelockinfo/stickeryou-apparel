@@ -1,0 +1,123 @@
+<div class="main-interiors-cls">
+  <div class="main-section-cls">
+    {% for block in section.blocks %}
+    <div class="cls-block-interios">
+      <a href="{{ block.settings.link }}">
+        <div class="img-overlay">
+          <img src="{{ block.settings.image | img_url: 'master' }}" alt="Avatar" class="img-overlay-image">
+          <div class="overlay">
+            <div class="text">{{ block.settings.heading }}</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+
+    {% endfor %}
+  </div>
+</div>
+
+
+{% schema %}
+{
+"name": "Interiors",
+"settings": [],
+"blocks" : [
+{
+"name" : "block",
+"type" : "block",
+"settings" : [
+{
+"id" : "image",
+"type" : "image_picker",
+"label" : "Image"
+},
+{
+"id" : "heading",
+"type" : "text",
+"label" : "Heading"
+},
+{
+"id" : "link",
+"type" : "url",
+"label" : "Link"
+}
+]
+}
+],
+"presets" : [
+{
+"name" : "Interiors"
+}
+]
+}
+{% endschema %}
+
+<style>
+
+  .main-interiors-cls{
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+  }
+  .main-section-cls{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .cls-block-interios{
+    width: 31%;
+    margin: 1%;
+  }
+
+  .img-overlay {
+    position: relative;
+    width:100%;
+  }
+
+  .img-overlay-image {
+    width: 100%;
+    height: 400px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(255 255 255 / 66%);
+  }
+
+  .img-overlay:hover .overlay {
+    opacity: 1;
+  }
+
+  .text {
+    color: red;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  @media(max-width:1000px){
+    .cls-block-interios{
+    width: 48%;
+    margin: 1%;
+  }
+  }
+  @media(max-width:768px){
+    .cls-block-interios{
+    width: 98%;
+    margin: 1%;
+  }
+  }
+</style>

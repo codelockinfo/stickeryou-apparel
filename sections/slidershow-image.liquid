@@ -1,0 +1,53 @@
+<div class="instamaindiv">
+  
+   <section class="site-main page-index " role="main">
+        <div class="container">
+            <ul class="cycle-slideshow" 
+               data-cycle-fx="fadeout"
+               data-cycle-speed=1500
+               data-cycle-timeout=4000
+               data-cycle-next="#next"
+               data-cycle-manual-fx="scrollHorz"
+               data-cycle-manual-speed="200">
+              {% for block in section.blocks %}
+                <li class="__photo active" style="background: url('{{ block.settings.image | img_url: 'master' }}')no-repeat center; background-size: cover;">
+                  <h1 class="sliderimgHeading">{{ block.settings.imgheading }}</h1></li>
+           {% endfor %}
+              </ul>
+        </div>
+</section>
+  
+</div>
+
+
+{% schema %}
+  {
+    "name": "Insta Slider",
+    "blocks": [
+      {
+        "type": "slide",
+        "name": "Slide",
+        "settings": [
+		  {
+			"id": "imgheading",
+			"type": "text",
+			"label": "Add Image Heading"
+		  },
+          {
+            "id": "image",
+            "type": "image_picker",
+            "label": "Image"
+          }
+        ]
+      }
+  ],
+  "presets": [
+	{
+	  "name": "Insta Slider",
+	  "category": "Slider"
+	}
+  ]
+  }
+{% endschema %}
+
+

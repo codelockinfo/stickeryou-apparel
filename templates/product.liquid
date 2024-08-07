@@ -1,0 +1,8 @@
+{% section 'product-template' %}
+{% section 'related-products' %}
+{% section 'recently-viewed-products' %} 
+
+{% capture the_snippet_reviews %}{% render 'socialshopwave-widget-recommends' with 1 %}{% endcapture %}
+{% unless the_snippet_reviews contains 'Liquid error' %}
+{{ the_snippet_reviews }}
+{% endunless %}
