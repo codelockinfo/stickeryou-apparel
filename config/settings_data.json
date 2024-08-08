@@ -120,8 +120,9 @@
           "mega_menu_6H9xpa": {
             "type": "mega_menu",
             "settings": {
-              "navigation_mega_menutext": "",
-              "navigation_mega_menulink": ""
+              "navigation_mega_menuimage": "shopify:\/\/shop_images\/Artboard_8.webp",
+              "navigation_mega_menutext": "Gift Card",
+              "navigation_mega_menulink": "shopify:\/\/collections\/frontpage"
             }
           },
           "mega_menu_GDzkJU": {
