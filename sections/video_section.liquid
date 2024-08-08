@@ -1,0 +1,123 @@
+<div class="video_section">
+  <div class="container">
+    <div class="video_heading">
+      <h2 class="video_h1">{{ section.settings.videoh1 }}</h2>
+    </div>
+    <div class="swiper VideoSlider">
+      <div class="swiper-wrapper">
+        {%- for block in section.blocks -%}
+          <div class="swiper-slide">
+            <div class="video_main_box">
+              {% if block.settings.videoimg != blank %}
+                <div class="video_img_box">
+                  <img
+                    src="{{ block.settings.videoimg | img_url: 'master' }}"
+                    alt=""
+                    class="video_img"
+                  >
+                </div>
+              {% endif %}
+              <div class="video_content_box">
+                <h3 class="v_heading">{{ block.settings.vheading }}</h3>
+                <p class="v_paragraph">
+                  {{ block.settings.vparagraph }}
+                </p>
+                <a href="{{block.settings.vlinka}}" class="v_link" target="_blank">{{ block.settings.vlink }}</a>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "video section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "video_h1",
+      "label": "Section heading Text"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Video block",
+      "type": "text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "videoimg",
+          "label": "Video img"
+        },
+        {
+          "type": "text",
+          "id": "vheading",
+          "label": "video heading"
+        },
+        {
+          "type": "text",
+          "id": "vparagraph",
+          "label": "Video paragraph"
+        },
+        {
+          "type": "text",
+          "id": "vlink",
+          "label": "Video link text"
+        },
+        {
+          "type": "url",
+          "id": "vlinka",
+          "label": "Video link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "video section",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}
+
+<script>
+  var swiper = new Swiper('.VideoSlider', {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    //   mousewheel: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      375: {
+        slidesPerView: 1.3,
+        spaceBetween: 20,
+      },
+      649: {
+        slidesPerView: 2.5,
+        spaceBetween: 20,
+      },
+      991: {
+        slidesPerView: 3.5,
+        spaceBetween: 20,
+      },
+      1000: {
+        slidesPerView: 3.5,
+        spaceBetween: 20,
+      },
+      1200: {
+        slidesPerView: 3.7,
+        spaceBetween: 30,
+      },
+      1300: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+    },
+  });
+</script>

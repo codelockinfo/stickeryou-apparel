@@ -14,7 +14,7 @@
     {%- if page_description -%}
       <meta name="description" content="{{ page_description | escape }}">
     {%- endif -%}
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="canonical" href="{{ canonical_url }}">
 
     {%- if settings.favicon -%}
@@ -27,7 +27,8 @@
 
     <link rel="stylesheet" href="{{ 'theme.scss.css' | asset_url }}">
     <link rel="stylesheet" href="{{ 'style.css' | asset_url }}">
-
+    {{ 'custom.css' | asset_url | stylesheet_tag: preload: true }}
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
     <script>
       // This allows to expose several variables to the global scope, to be used in scripts
       window.theme = {
