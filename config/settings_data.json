@@ -751,6 +751,16 @@
               "Vlink_a": ""
             }
           },
+          "text_3J7qTt": {
+            "type": "text",
+            "settings": {
+              "videoimg": "shopify:\/\/shop_images\/lisu_New_copy_400x_c8ae4bbd-57b4-4ac1-87d6-9f492453a001.png",
+              "vheading": "A Quality Shirt Is The Sum Of Its Parts",
+              "vparagraph": "Carefully sourced fabrics, the finest raw materials, state-of-the-art machinery and uncompromising processes ensure our shirts are made to last.",
+              "vlink": "Watch Here",
+              "Vlink_a": ""
+            }
+          },
           "text_EV6BDg": {
             "type": "text",
             "settings": {
@@ -781,6 +791,7 @@
         },
         "block_order": [
           "text_W8tKna",
+          "text_3J7qTt",
           "text_EV6BDg",
           "text_4n84hN",
           "text_Fwhn8e"
