@@ -104,8 +104,9 @@
           "mega_menu_xprjmc": {
             "type": "mega_menu",
             "settings": {
-              "navigation_mega_menutext": "",
-              "navigation_mega_menulink": ""
+              "navigation_mega_menuimage": "shopify:\/\/shop_images\/spring_3f7a8339-5182-4ebf-88b8-c652d406d9cf.webp",
+              "navigation_mega_menutext": "Summer Ready",
+              "navigation_mega_menulink": "shopify:\/\/collections"
             }
           },
           "mega_menu_qUXfJD": {
