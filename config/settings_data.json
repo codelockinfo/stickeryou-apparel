@@ -737,6 +737,12 @@
           "text_color": "#ffffff",
           "button_color": "#363636"
         }
+      },
+      "video_section_fnfxBN": {
+        "type": "video_section",
+        "settings": {
+          "video_h1": ""
+        }
       }
     },
     "content_for_index": [
@@ -751,7 +757,8 @@
       "164907614468bd4c05",
       "1649139500787f0b9d",
       "1655005732ee88d13d",
-      "slideshow_pLAy9m"
+      "slideshow_pLAy9m",
+      "video_section_fnfxBN"
     ]
   },
   "presets": {
