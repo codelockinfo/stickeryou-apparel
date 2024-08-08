@@ -96,8 +96,9 @@
           "mega_menu_9yDUFU": {
             "type": "mega_menu",
             "settings": {
-              "navigation_mega_menutext": "",
-              "navigation_mega_menulink": ""
+              "navigation_mega_menuimage": "shopify:\/\/shop_images\/Artboard_5_3a306c0b-cc56-4467-a529-f235ad5cd2de.webp",
+              "navigation_mega_menutext": "New Arrivals",
+              "navigation_mega_menulink": "shopify:\/\/collections\/frontpage"
             }
           },
           "mega_menu_xprjmc": {
