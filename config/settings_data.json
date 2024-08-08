@@ -128,8 +128,9 @@
           "mega_menu_GDzkJU": {
             "type": "mega_menu",
             "settings": {
-              "navigation_mega_menutext": "",
-              "navigation_mega_menulink": ""
+              "navigation_mega_menuimage": "shopify:\/\/shop_images\/Artboard_7_e8e016ca-0983-4841-bf1e-9ab0a65a14a5.webp",
+              "navigation_mega_menutext": "Store Locations",
+              "navigation_mega_menulink": "shopify:\/\/collections\/frontpage"
             }
           }
         },
