@@ -1,0 +1,58 @@
+.customhidden{
+    display: none;
+}
+.customblock{
+    display: block !important;
+}
+.Drawer__Header{
+    justify-content: center;
+}
+.Drawer__Header .Drawer__Close{
+    right:30px;
+    left: unset;
+}
+.marginr-10{
+    margin-right: 10px;
+}
+.customhead1{
+    display: flex;
+    gap: 20px;
+}
+.flex{
+    display: flex;
+}
+.items-center{
+    align-items: center;
+}
+.Header--transparent .icon-bookappointment {
+    filter: invert(0);
+}
+.Header--transparent .Header__LogoImage,
+.icon-bookappointment {
+    filter: invert(1);
+}
+.customline{
+    position: relative;
+}
+.customline::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: -10px;
+    height: 40px;
+    width: 1px;
+    background: #c4c4c4;
+}
+.book-appoinment{
+    padding-left: 19px;
+}
+.new-menu-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.new-menu-main .menu-item {
+    width: 50%;
+    text-align: center;
+    padding: 0 0 14px;
+}
