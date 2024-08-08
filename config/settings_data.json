@@ -84,6 +84,59 @@
     "sections": {
       "sidebar-menu": {
         "type": "sidebar-menu",
+        "blocks": {
+          "mega_menu_rwgeMz": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menuimage": "shopify:\/\/shop_images\/Artboard_1_25bc87ce-fc4e-4ece-bb57-fb4e7ede26ec.webp",
+              "navigation_mega_menutext": "Shirts",
+              "navigation_mega_menulink": "shopify:\/\/collections\/all"
+            }
+          },
+          "mega_menu_9yDUFU": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menutext": "",
+              "navigation_mega_menulink": ""
+            }
+          },
+          "mega_menu_xprjmc": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menutext": "",
+              "navigation_mega_menulink": ""
+            }
+          },
+          "mega_menu_qUXfJD": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menutext": "",
+              "navigation_mega_menulink": ""
+            }
+          },
+          "mega_menu_6H9xpa": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menutext": "",
+              "navigation_mega_menulink": ""
+            }
+          },
+          "mega_menu_GDzkJU": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menutext": "",
+              "navigation_mega_menulink": ""
+            }
+          }
+        },
+        "block_order": [
+          "mega_menu_rwgeMz",
+          "mega_menu_9yDUFU",
+          "mega_menu_xprjmc",
+          "mega_menu_qUXfJD",
+          "mega_menu_6H9xpa",
+          "mega_menu_GDzkJU"
+        ],
         "settings": {
           "logo": "shopify:\/\/shop_images\/Asset_1.svg",
           "logo_max_width": 140,
