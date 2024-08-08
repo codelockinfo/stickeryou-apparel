@@ -1,4 +1,4 @@
-.container{
+.container {
     padding: 0 62px;
 }
 
@@ -52,12 +52,12 @@
 }
 
 /* VIDEO SECTION  */
-  .video_section .swiper {
+.video_section .swiper {
     width: 100%;
     height: 100%;
-  }
+}
 
-  /* .video_section .swiper-slide {
+/* .video_section .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -66,52 +66,83 @@
     align-items: center;
   } */
 
-  .video_section .swiper-slide .video_img {
+.video_section .swiper-slide .video_img {
     display: block;
     width: 100% !important;
     height: 100% !important;
     object-fit: cover;
     border-radius: 10px !important;
-  }
-  .video_img_box{
+}
+
+.video_img_box {
     width: 100%;
     margin-bottom: 28px;
-  }
-  .video_section{
+}
+
+.video_section {
     padding: 60px 0;
-  }
-  .video_heading .video_h1{
+}
+
+.video_heading .video_h1 {
     font-size: 24px;
     line-height: 24px;
     letter-spacing: 0em;
     color: #000;
     text-align: left;
     font-weight: 500 !important;
-    font-family: Helvetica Neue;
+    font-family: Helvetica;
     margin-bottom: 40px;
-  }
+}
 
-  .video_content_box .v_heading{
+.video_content_box .v_heading {
     font-weight: 500;
     font-size: 20px;
     color: #000;
-    font-family: Helvetica Neue;
+    font-family: Helvetica;
     padding: 0;
-  }
-  .video_content_box .v_paragraph{
+}
+
+.video_content_box .v_paragraph {
     letter-spacing: .2px;
     color: #7b7b7b;
     font-size: 16px;
-    font-family: Helvetica ;
+    font-family: Helvetica;
     line-height: 24.96px;
-  }
-  .video_content_box .v_link{
+}
+
+.video_content_box .v_link {
     font-weight: 400;
     font-size: 17px;
     color: #06c;
     text-decoration: none;
-    font-family: Helvetica Neue;
-  }
+    font-family: Helvetica;
+}
+
+
+/* IMG WITH TEXT OVERLAY  */
+.img_with_text_overlay .SectionHeader__Heading {
+    font-size: 61px;
+    color: #ffffff;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: -1px;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-family: Helvetica;
+}
+
+.imgwith_button {
+    background: transparent;
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    border-radius: 12px;
+    font-size: 16px;
+    padding: 18px 30px;
+    margin-top: 20px;
+}
+
+
 
 
 
@@ -154,5 +185,19 @@
 
     .ButtonGroup {
         justify-content: left !important;
+    }
+
+    .img_with_text_overlay .SectionHeader__Heading {
+        font-size: 40px;
+    }
+
+    .imgwith_button {
+        background: transparent;
+        border: 3px solid #ffffff;
+        color: #ffffff;
+        border-radius: 12px;
+        font-size: 16px;
+        padding: 10px 20px;
+        margin-top: 20px;
     }
 }
