@@ -35,7 +35,7 @@
     "uppercase_heading": true,
     "text_font": "futura_n4",
     "base_text_font_size": 14,
-    "currency_conversion_enabled": true,
+    "currency_conversion_enabled": false,
     "currency_conversion_round_amounts": true,
     "currency_conversion_supported_currencies": "USD CAD EUR GBP  DKK",
     "currency_conversion_money_format": "money_format",
@@ -85,9 +85,11 @@
       "sidebar-menu": {
         "type": "sidebar-menu",
         "settings": {
-          "primary_menu": "main-menu",
+          "logo": "shopify:\/\/shop_images\/Asset_1.svg",
+          "logo_max_width": 140,
+          "primary_menu": "",
           "secondary_menu": "",
-          "show_social_media": true
+          "show_social_media": false
         }
       },
       "announcement": {
