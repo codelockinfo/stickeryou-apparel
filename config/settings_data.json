@@ -764,9 +764,10 @@
           "text_EV6BDg": {
             "type": "text",
             "settings": {
-              "vheading": "",
-              "vparagraph": "",
-              "vlink": "",
+              "videoimg": "shopify:\/\/shop_images\/Verti_caraousel_3_400x_f3264449-7b7e-4e22-9613-73769bfe7660.png",
+              "vheading": "Be Your Own Designer",
+              "vparagraph": "Ever worn a shirt that you designed by yourself, for yourself? From the fabric to the buttons to the fit. Designed by you, made by us.",
+              "vlink": "Watch Here",
               "Vlink_a": ""
             }
           },
