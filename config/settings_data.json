@@ -740,6 +740,51 @@
       },
       "video_section_fnfxBN": {
         "type": "video_section",
+        "blocks": {
+          "text_W8tKna": {
+            "type": "text",
+            "settings": {
+              "videoimg": "shopify:\/\/shop_images\/lisu_New_copy_400x_400x_bcd7b5a4-8a10-45e9-a1d1-e849279e49a3.jpg",
+              "vheading": "Gift Card",
+              "vparagraph": "Give him something he actually wants - the gift of choice. Our Gift Cards are the perfect present for every man in your life.",
+              "vlink": "Watch Here",
+              "Vlink_a": ""
+            }
+          },
+          "text_EV6BDg": {
+            "type": "text",
+            "settings": {
+              "vheading": "",
+              "vparagraph": "",
+              "vlink": "",
+              "Vlink_a": ""
+            }
+          },
+          "text_4n84hN": {
+            "type": "text",
+            "settings": {
+              "vheading": "",
+              "vparagraph": "",
+              "vlink": "",
+              "Vlink_a": ""
+            }
+          },
+          "text_Fwhn8e": {
+            "type": "text",
+            "settings": {
+              "vheading": "",
+              "vparagraph": "",
+              "vlink": "",
+              "Vlink_a": ""
+            }
+          }
+        },
+        "block_order": [
+          "text_W8tKna",
+          "text_EV6BDg",
+          "text_4n84hN",
+          "text_Fwhn8e"
+        ],
         "settings": {
           "video_h1": ""
         }
