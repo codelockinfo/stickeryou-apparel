@@ -112,8 +112,9 @@
           "mega_menu_qUXfJD": {
             "type": "mega_menu",
             "settings": {
-              "navigation_mega_menutext": "",
-              "navigation_mega_menulink": ""
+              "navigation_mega_menuimage": "shopify:\/\/shop_images\/bestseller.webp",
+              "navigation_mega_menutext": "Customer Favourites",
+              "navigation_mega_menulink": "shopify:\/\/collections\/frontpage"
             }
           },
           "mega_menu_6H9xpa": {
