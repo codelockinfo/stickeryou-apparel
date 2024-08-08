@@ -795,15 +795,16 @@
       "image_with_text_overlay_GaDy6J": {
         "type": "image-with-text-overlay",
         "settings": {
-          "imgbuttontext": "",
-          "imgtexturl": "",
+          "imgbuttontext": "View All",
+          "imgtexturl": "shopify:\/\/collections\/frontpage",
           "section_size": "large",
+          "image": "shopify:\/\/shop_images\/Store_Banner_1200x_5f9b1bf2-dc2c-4e05-be50-c38a542dfd36.jpg",
           "text_color": "#ffffff",
           "overlay_color": "#000000",
-          "overlay_opacity": 30,
+          "overlay_opacity": 23,
           "subheading": "",
           "title": "Tell your story",
-          "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+          "content": ""
         }
       }
     },
