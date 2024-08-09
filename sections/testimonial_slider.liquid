@@ -19,6 +19,7 @@
         {%- for block in section.blocks -%}
         <div class="swiper-slide">
           <div class="testimonial_content_box">
+            {% if block.settings.cimg != blank %}
             <div class="client_detail">
               <div class="client_img">
                 <img src="{{ block.settings.cimg | img_url: 'master' }}"
@@ -31,6 +32,7 @@
                 </div>
               </div>
             </div>
+          {% endif %}
             <p class="client_p">{{block.settings.cparagraph}}</p>
           </div>
         </div>
