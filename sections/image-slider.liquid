@@ -1,43 +1,97 @@
-<body>
-    <swiper-container class="mySwiper" slides-per-view="2.5" space-between="30">
+<swiper-container class="mySwiper" slides-per-view="2.5" space-between="30">
     <swiper-slide>
-        <div class="image-container">
-            <img src="https://us.bombayshirts.com/cdn/shop/files/new_arrivals_3856d195-54a4-4b43-b91c-6b3ecc6b61fe_800x.jpg?v=1711795856" class="image"/>
-            <h2 class="image-heading">Our New Arrivals</h2>
-            <p class="image-paragraph">The newest and best from our collection of high-quality <br> custom-made shirts.</p>
-            <button class="image-btn">Shop Now</button>
+        <div class="image-container" >
+            {% if section.settings.images != blank %}
+                <img src="{{ section.settings.images | img_url: 'https://us.bombayshirts.com/cdn/shop/files/new_arrivals_3856d195-54a4-4b43-b91c-6b3ecc6b61fe_800x.jpg?v=1711795856' }} class='image'">
+            {% endif %}
+            <h2 class="image-heading">{{ section.settings.title }}</h2>
+            <p class="image-paragraph">{{ section.settings.subtitle }}</p>
+            {% if section.settings.button_link != blank %}
+                <a href="{{ section.settings.button_link }}" class="image-btn">{{ section.settings.button_text }}</a>
+            {% endif %}
         </div>
     </swiper-slide>
     <swiper-slide class="image-container">
         <div class="image-container">
-            <img src="https://us.bombayshirts.com/cdn/shop/files/customer_favs_800x.jpg?v=1706703018" class="image"/>
-            <h2 class="image-heading">Customer Favourites</h2>
-            <p class="image-paragraph">Tried and tested wardrobe heroes that are sure to make their way into your <br> wardrobe rotation.</p>
-            <button class="image-btn">Shop Now</button>
+            {% if section.settings.images != blank %}
+                <img src="{{ section.settings.images | img_url: 'https://us.bombayshirts.com/cdn/shop/files/customer_favs_800x.jpg?v=1706703018' }} class='image'">
+            {% endif %}
+            <h2 class="image-heading">{{ section.settings.title }}</h2>
+            <p class="image-paragraph">{{ section.settings.subtitle }}</p>
+            {% if section.settings.button_link != blank %}
+                <a href="{{ section.settings.button_link }}" class="image-btn">{{ section.settings.button_text }}</a>
+            {% endif %}
         </div>
     </swiper-slide>
     <swiper-slide class="image-container">
         <div class="image-container">
-            <img src="https://us.bombayshirts.com/cdn/shop/files/weekend_800x.jpg?v=1706703019" class="image"/>
-            <h2 class="image-heading">Weekend Wear</h2>
-            <p class="image-paragraph">Slip into something easy over the weekend. Our line-up of laid back shirts have <br> got you covered.</p>
-            <button class="image-btn">Shop Now</button>
+            {% if section.settings.images != blank %}
+                <img src="{{ section.settings.images | img_url: 'https://us.bombayshirts.com/cdn/shop/files/weekend_800x.jpg?v=1706703019' }} class='image'">
+            {% endif %}
+            <h2 class="image-heading">{{ section.settings.title }}</h2>
+            <p class="image-paragraph">{{ section.settings.subtitle }}</p>
+            {% if section.settings.button_link != blank %}
+                <a href="{{ section.settings.button_link }}" class="image-btn">{{ section.settings.button_text }}</a>
+            {% endif %}
         </div>
     </swiper-slide>
-    </swiper-container> 
+</swiper-container>
+<div class="btn-container">
     <button class="prev1">❮</button>
     <button class="next1">❯</button>
-</body>
+</div> 
 
 
     {% schema %}
         {
             "name": "Image Slider",
-            "settings": [],
+            "max_blocks": 3,
+            "settings": [
+                
+            ],
+            "blocks": [
+                {
+                    "type": "collection",
+                    "name": "Image Slide",
+                    "settings": [
+                        {
+                            "type": "collection",
+                            "id": "collection_slider",
+                            "label": "Slider"
+                        },
+                        {
+                            "type": "image_picker",
+                            "id": "images",
+                            "label": "Product Image"
+                        },
+                        {
+                            "type": "text",
+                            "id": "title",
+                            "label": "Title"
+                        },
+                        {
+                            "type": "text",
+                            "id": "subtitle",
+                            "label": "Subtitle"
+                        },
+                        {
+                            "type": "url",
+                            "id": "button_link",
+                            "label": "Button Link"
+                        },
+                        {
+                            "type": "text",
+                            "id": "button_text",
+                            "label": "Button Text"
+                        }
+                    ]
+                }
+            ],
             "presets": [
-        {   
-            "name": "Image Slider"
-        }
+                {   
+                "categogy": "slider",
+                "name": "Image Slider"
+            }
         ]
     }
     {% endschema %}
@@ -60,6 +114,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            position: relative;
         }
 
         .image {
@@ -73,7 +128,6 @@
         swiper-container {
             max-width: 100%;
             height: 100%;
-            position: relative;
         }
 
         .image-heading{
@@ -108,6 +162,7 @@
             padding: 10px 15px;
             cursor: pointer;
             z-index: 1;
+            top: 45%;
             border-radius: 50%;
             font-size: 16px;
             left: 10px;
@@ -123,6 +178,7 @@
             padding: 10px 15px;
             cursor: pointer;
             z-index: 1;
+            top: 45%;
             border-radius: 50%;
             font-size: 16px;
             right: 10px;
