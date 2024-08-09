@@ -300,6 +300,7 @@
     box-shadow: 2px 4px 20px 4px #0000000a;
     border-radius: 10px;
     width: 100%;
+    min-height: 300px;
 }
 .testimonial_section .testi_p {
     font-size: 14px;
