@@ -1,0 +1,45 @@
+<div class="count_section" >
+  <div class="container">
+    <div class="details_counter">
+      {%- for block in section.blocks -%}
+        <div class="counter_tab">
+          <h4 class="count_h4">{{ block.settings.counth4 }}</h4>
+          <p class="count_p">{{ block.settings.countp }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "count section",
+  "settings": [
+    
+  ],
+  "blocks": [
+    {
+      "name": "details",
+      "type": "text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "counth4",
+          "label": "heading details"
+        },
+        {
+          "type": "text",
+          "id": "countp",
+          "label": "paragraph details"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "count section",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}
