@@ -920,6 +920,42 @@
       },
       "count_section_GNaxNy": {
         "type": "count_section",
+        "blocks": {
+          "text_AE6t3Q": {
+            "type": "text",
+            "settings": {
+              "counth4": "100+",
+              "countp": "Countries Shipped"
+            }
+          },
+          "text_Dp4aMk": {
+            "type": "text",
+            "settings": {
+              "counth4": "1 Million+",
+              "countp": "Shirts Produced"
+            }
+          },
+          "text_hDGYjP": {
+            "type": "text",
+            "settings": {
+              "counth4": "4.5 Rating",
+              "countp": "2k+ Google Reviews"
+            }
+          },
+          "text_ghzQbK": {
+            "type": "text",
+            "settings": {
+              "counth4": "100%",
+              "countp": "Fit Guarantee"
+            }
+          }
+        },
+        "block_order": [
+          "text_AE6t3Q",
+          "text_Dp4aMk",
+          "text_hDGYjP",
+          "text_ghzQbK"
+        ],
         "settings": {
         }
       }
