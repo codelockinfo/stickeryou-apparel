@@ -1,0 +1,76 @@
+<div class="details_slider_section">
+    <div class="swiper detailSlider">
+        <div class="swiper-wrapper">
+            {%- for block in section.blocks -%}
+            <div class="swiper-slide">
+                {% if block.settings.desktopimg != blank %}
+                <div class="details_content">
+                    <div class="details_img">
+                        <img src="{{block.settings.desktopimg | img_url: 'master' }}" class="deskto_img" alt="">
+                        <img src="{{block.settings.mobileimg | img_url: 'master' }}" class="mobile_img" alt="">
+                    </div>
+                    <div class="details_content_box">
+                        <p class="content_p">{{block.settings.contentp}}</p>
+                    </div>
+                </div>
+            {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+{% schema %}
+{
+"name": "Details slider",
+"settings": [],
+"blocks": [
+{
+"name": "details slide",
+"type": "text",
+"settings": [
+{
+"type": "image_picker",
+"id": "desktopimg",
+"label": "Desktop view img"
+},
+{
+"type": "image_picker",
+"id": "mobileimg",
+"label": "Mobile view img"
+},
+{
+"type": "text",
+"id": "contentp",
+"label": "Add details"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Details slider",
+"settings": {}
+}
+]
+}
+{% endschema %}
+<script>
+    $(document).ready(function () {
+        // Swiper: Slider
+        new Swiper('.detailSlider', {
+            loop: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            slidesPerView: 1,
+            autoplay: true,
+            paginationClickable: true,
+            spaceBetween: 20,
+        });
+    });
+</script>
