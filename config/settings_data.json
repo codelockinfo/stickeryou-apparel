@@ -1047,9 +1047,10 @@
           "text_y7j6ce": {
             "type": "text",
             "settings": {
-              "cname": "",
-              "staricon": "",
-              "cparagraph": ""
+              "cimg": "shopify:\/\/shop_images\/Group_34418.svg",
+              "cname": "Leonard",
+              "staricon": "<i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i>",
+              "cparagraph": "“Aesthetically and humanly, Bombay Shirt Company is for me a great discovery.”"
             }
           },
           "text_jTRbiV": {
