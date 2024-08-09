@@ -1,0 +1,169 @@
+<div class="testimonial_section">
+  <div class="container">
+    <div class="testimonial_header">
+      <h1 class="testi_h1">{{section.settings.sheading}}</h1>
+      <p class="testi_p">{{section.settings.subheading}}</p>
+    </div>
+    <div class="testimonial_container">
+      <div class="g_reviews">
+        <div class="review_img_box">
+          <img src="{{section.settings.startimg | img_url: 'master' }}" alt="">
+        </div>
+        <a href="{{section.settings.linkurl}}" target="_blank">{{section.settings.linktext}}</a>
+      </div>
+    </div>
+    <div class="swiper testiSlider">
+      <div class="swiper-wrapper">  
+        {%- for block in section.blocks -%}
+        <div class="swiper-slide">
+          <div class="testimonial_content_box">
+            <div class="client_detail">
+              <div class="client_img">
+                <img src="{{ block.settings.cimg | img_url: 'master' }}"
+                  class="client_img" alt="">
+              </div>
+              <div class="client_name">
+                <h3 class="client_h3">{{block.settings.cname}}</h3>
+                <div class="star_icon">
+                  {{block.settings.staricon}}
+                </div>
+              </div>
+            </div>
+            <p class="client_p">{{block.settings.cparagraph}}</p>
+          </div>
+        </div>
+      {% endfor %}
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+"name": "Custom testimonial",
+"settings": [
+  {
+    "type": "text",
+    "id": "sheading",
+    "label": "Section heading"
+  },
+  {
+    "type": "text",
+    "id": "subheading",
+    "label": "Section subheading"
+  },
+  {
+    "type": "image_picker",
+    "id": "startimg",
+    "label": "Star img"
+  },
+  {
+    "type": "text",
+    "id": "linktext",
+    "label": "Link text"
+  },
+  {
+    "type": "url",
+    "id": "linkurl",
+    "label": "link"
+  }
+],
+"blocks": [
+  {
+    "name": "Testimonial slider",
+    "type": "text",
+    "settings": [
+       {
+         "type": "image_picker",
+         "id": "cimg",
+         "label": "Client img"
+       },
+       {
+         "type": "text",
+         "id": "cname",
+         "label": "Client name"
+       },
+       {
+         "type": "html",
+         "id": "staricon",
+         "label": "Star icon use fa fa "
+       },
+       {
+         "type": "text",
+         "id": "cparagraph",
+         "label": "Client review"
+       }
+    ]
+  }
+],
+"presets": [
+{
+"name": "Custom testimonial",
+"settings": {}
+}
+]
+}
+{% endschema %}
+
+<script>
+  var swiper = new Swiper('.testiSlider', {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      375: {
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+      },
+      600: {
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+      },
+      700: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      991: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+    on: {
+      slideChange: function () {
+        updateNavigation(this);
+      },
+    },
+  });
+
+  function updateNavigation(swiper) {
+    // Hide previous arrow if on the first slide
+    if (swiper.isBeginning) {
+      swiper.navigation.prevEl.style.display = 'none';
+    } else {
+      swiper.navigation.prevEl.style.display = 'block';
+    }
+
+    // Hide next arrow if on the last slide
+    if (swiper.isEnd) {
+      swiper.navigation.nextEl.style.display = 'none';
+    } else {
+      swiper.navigation.nextEl.style.display = 'block';
+    }
+  }
+
+  // Initial check to hide/show arrows on page load
+  updateNavigation(swiper);
+</script>
