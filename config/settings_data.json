@@ -961,6 +961,54 @@
       },
       "details_slider_pFyDx4": {
         "type": "details_slider",
+        "blocks": {
+          "text_7HAyah": {
+            "type": "text",
+            "settings": {
+              "desktopimg": "shopify:\/\/shop_images\/newArtboard_1_b1c23d79-c39f-46dd-99e5-201dca3c37d3.jpg",
+              "mobileimg": "shopify:\/\/shop_images\/1_2e072ce9-441c-497b-9891-9d1b4d95d4b6.jpg",
+              "contentp": "Founded in 2012, we're India's first online made-to-measure brand.<br>We make the highest quality shirts, pants and jeans."
+            }
+          },
+          "text_MA7B9q": {
+            "type": "text",
+            "settings": {
+              "contentp": ""
+            }
+          },
+          "text_p96dYw": {
+            "type": "text",
+            "settings": {
+              "contentp": ""
+            }
+          },
+          "text_wLqKXa": {
+            "type": "text",
+            "settings": {
+              "contentp": ""
+            }
+          },
+          "text_Ye8tjm": {
+            "type": "text",
+            "settings": {
+              "contentp": ""
+            }
+          },
+          "text_HbrnJP": {
+            "type": "text",
+            "settings": {
+              "contentp": ""
+            }
+          }
+        },
+        "block_order": [
+          "text_7HAyah",
+          "text_MA7B9q",
+          "text_p96dYw",
+          "text_wLqKXa",
+          "text_Ye8tjm",
+          "text_HbrnJP"
+        ],
         "settings": {
         }
       }
