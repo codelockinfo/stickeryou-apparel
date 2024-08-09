@@ -1022,6 +1022,15 @@
         ],
         "settings": {
         }
+      },
+      "testimonial_slider_83x97L": {
+        "type": "testimonial_slider",
+        "settings": {
+          "sheading": "",
+          "subheading": "",
+          "linktext": "",
+          "linkurl": ""
+        }
       }
     },
     "content_for_index": [
@@ -1041,7 +1050,8 @@
       "1649075007f82101d6",
       "164907614468bd4c05",
       "1649139500787f0b9d",
-      "1655005732ee88d13d"
+      "1655005732ee88d13d",
+      "testimonial_slider_83x97L"
     ]
   },
   "presets": {
