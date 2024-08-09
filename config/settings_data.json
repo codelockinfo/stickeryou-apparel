@@ -1005,7 +1005,9 @@
           "text_HbrnJP": {
             "type": "text",
             "settings": {
-              "contentp": ""
+              "desktopimg": "shopify:\/\/shop_images\/newArtboard_6_cf08f29f-2529-4a1d-a596-5b5f126ae45b.jpg",
+              "mobileimg": "shopify:\/\/shop_images\/6_891a032c-8e91-4b55-9343-7641a40fb3ac.jpg",
+              "contentp": "Oh, and if you're not happy, we have a seamless Alterations & Returns policy."
             }
           }
         },
