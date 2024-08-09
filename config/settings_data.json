@@ -1026,9 +1026,10 @@
       "testimonial_slider_83x97L": {
         "type": "testimonial_slider",
         "settings": {
-          "sheading": "",
-          "subheading": "",
-          "linktext": "",
+          "sheading": "Testimonials",
+          "subheading": "Hear from our customers in their own words",
+          "startimg": "shopify:\/\/shop_images\/Group_34223.svg",
+          "linktext": "4.5 \/ 5 Google review ratings",
           "linkurl": ""
         }
       }
@@ -1038,6 +1039,7 @@
       "details_slider_pFyDx4",
       "newslogo_6Jczbn",
       "count_section_GNaxNy",
+      "testimonial_slider_83x97L",
       "video_section_fnfxBN",
       "image_with_text_overlay_GaDy6J",
       "featured-collections",
@@ -1050,8 +1052,7 @@
       "1649075007f82101d6",
       "164907614468bd4c05",
       "1649139500787f0b9d",
-      "1655005732ee88d13d",
-      "testimonial_slider_83x97L"
+      "1655005732ee88d13d"
     ]
   },
   "presets": {
