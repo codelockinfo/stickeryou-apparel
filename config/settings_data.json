@@ -1038,9 +1038,10 @@
           "text_TLhNDK": {
             "type": "text",
             "settings": {
-              "cname": "",
-              "staricon": "",
-              "cparagraph": ""
+              "cimg": "shopify:\/\/shop_images\/Group_34416.svg",
+              "cname": "Sam",
+              "staricon": "<i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i>",
+              "cparagraph": "\"Honestly for price vs quality there is nowhere better to buy a shirt. The turnaround time and customer service is excellent and the final product is a fantastic shirt. I have been coming to them for 4 years and will not buy my shirts anywhere else.\""
             }
           },
           "text_y7j6ce": {
