@@ -1025,6 +1025,20 @@
       },
       "testimonial_slider_83x97L": {
         "type": "testimonial_slider",
+        "blocks": {
+          "text_kAnn6b": {
+            "type": "text",
+            "settings": {
+              "cname": "",
+              "staricon": "",
+              "cparagraph": ""
+            }
+          }
+        },
+        "block_order": [
+          "text_kAnn6b"
+        ],
+        "disabled": true,
         "settings": {
           "sheading": "Testimonials",
           "subheading": "Hear from our customers in their own words",
