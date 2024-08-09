@@ -342,6 +342,9 @@
         width: 50%;
         margin: 20px 0;
     }
+    .details_slider_section{
+        padding-bottom: 25px;
+    }
 }
 
 @media (max-width:640px) {
