@@ -1053,6 +1053,15 @@
               "cparagraph": "“Aesthetically and humanly, Bombay Shirt Company is for me a great discovery.”"
             }
           },
+          "text_xbpB69": {
+            "type": "text",
+            "settings": {
+              "cimg": "shopify:\/\/shop_images\/Group_34422.svg",
+              "cname": "Michael",
+              "staricon": "<i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i>",
+              "cparagraph": "“My experience at Bombay Shirt Company was top notch from start to finish. White glove service and a fantastic product.”"
+            }
+          },
           "text_jTRbiV": {
             "type": "text",
             "settings": {
@@ -1066,6 +1075,7 @@
           "text_kAnn6b",
           "text_TLhNDK",
           "text_y7j6ce",
+          "text_xbpB69",
           "text_jTRbiV"
         ],
         "settings": {
