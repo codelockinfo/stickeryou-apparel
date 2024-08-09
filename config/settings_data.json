@@ -958,10 +958,16 @@
         ],
         "settings": {
         }
+      },
+      "details_slider_pFyDx4": {
+        "type": "details_slider",
+        "settings": {
+        }
       }
     },
     "content_for_index": [
       "slideshow_pLAy9m",
+      "details_slider_pFyDx4",
       "newslogo_6Jczbn",
       "count_section_GNaxNy",
       "video_section_fnfxBN",
