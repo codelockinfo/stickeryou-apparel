@@ -989,7 +989,9 @@
           "text_wLqKXa": {
             "type": "text",
             "settings": {
-              "contentp": ""
+              "desktopimg": "shopify:\/\/shop_images\/newArtboard_4_d6bd5a04-9cbc-4a15-be88-10c38f277371.jpg",
+              "mobileimg": "shopify:\/\/shop_images\/4_eba33beb-2a95-4480-9291-112170892b9e.jpg",
+              "contentp": "To calculate your unique size, answer 5 questions via our fit algorithm."
             }
           },
           "text_Ye8tjm": {
