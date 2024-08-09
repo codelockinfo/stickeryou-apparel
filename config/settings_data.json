@@ -917,11 +917,17 @@
         ],
         "settings": {
         }
+      },
+      "count_section_GNaxNy": {
+        "type": "count_section",
+        "settings": {
+        }
       }
     },
     "content_for_index": [
       "slideshow_pLAy9m",
       "newslogo_6Jczbn",
+      "count_section_GNaxNy",
       "video_section_fnfxBN",
       "image_with_text_overlay_GaDy6J",
       "featured-collections",
