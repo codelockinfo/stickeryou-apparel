@@ -1070,6 +1070,15 @@
               "staricon": "<i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i>",
               "cparagraph": "\"High quality, fully customizable shirts made to order, and at an affordable price! The service is absolutely top-notch.\""
             }
+          },
+          "text_Tw44jV": {
+            "type": "text",
+            "settings": {
+              "cimg": "shopify:\/\/shop_images\/Group_34416.svg",
+              "cname": "Matthew",
+              "staricon": "<i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i>",
+              "cparagraph": "\"Hands-on customer service in remote measurement with explanations and relatively timely deliveries have made me a repeat customer for my dress shirt needs.\""
+            }
           }
         },
         "block_order": [
@@ -1077,7 +1086,8 @@
           "text_TLhNDK",
           "text_y7j6ce",
           "text_xbpB69",
-          "text_jTRbiV"
+          "text_jTRbiV",
+          "text_Tw44jV"
         ],
         "settings": {
           "sheading": "Testimonials",
