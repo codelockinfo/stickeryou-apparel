@@ -1,174 +1,148 @@
-<swiper-container class="mySwiper" slides-per-view="2.5" space-between="30">
-    {%- for product in section.blocks -%}
+<section class="image-section">
+    <swiper-container class="mySwiper" slides-per-view="2.5" space-between="20" >
+    {% for block in section.blocks %}
         <swiper-slide>
             <div class="image-container">
-                {%- if section.settings.images ! -%}
-                    <img src="{{ section.settings.images | img_url: 'products' }}" class="image">
-                {%- endif -%}
+                {% if block.settings.images != blank %}
+                    <img src="{{ block.settings.images | img_url: 'products' }}" class="slider_images">
+                {% endif %}
                 <h2 class="image-heading">
-                    {{ section.settings.title }}
+                    {{ block.settings.title }}
                 </h2>
                 <p class="image-paragraph">
-                    {{ section.settings.subtitle }}
+                    {{ block.settings.subtitle }}
                 </p>
-                {%- if section.settings.button_link -%}
-                    <a href="{{ section.settings.button_link }}" class="image-btn">
-                        {{ section.settings.button_text }}
+                {% if block.settings.button_link %}
+                    <a href="{{ block.settings.button_link }}" class="image-btn">
+                        {{ block.settings.button_text }}
                     </a>
-                {%- endif -%}
+                {% endif %}
             </div>
         </swiper-slide>
-    {%- endfor -%}
-</swiper-container>
-{% comment %} <div class="btn-container">
-    <button class="prev1">❮</button>
-    <button class="next1">❯</button>
-</div>  {% endcomment %}
+    {% endfor %}
+    </swiper-container> 
+    <div class="btn-container">
+        <button class="left-prev">❮</button>
+        <button class="right-next">❯</button>
+    </div>
+</section>
 
-
-    {% schema %}
-        {
-            "name": "Image Slider",
-            "settings": [
-            ],
-            "blocks": [
-                {
-                    "type": "sliders",
-                    "name": "Image Slider",
-                    "settings": [
-                        {
-                            "type": "image_picker",
-                            "id": "images",
-                            "label": "Product Image"
-                        },
-                        {
-                            "type": "text",
-                            "id": "title",
-                            "label": "Title"
-                        },
-                        {
-                            "type": "text",
-                            "id": "subtitle",
-                            "label": "Subtitle"
-                        },
-                        {
-                            "type": "url",
-                            "id": "button_link",
-                            "label": "Button Link"
-                        },
-                        {
-                            "type": "text",
-                            "id": "button_text",
-                            "label": "Button Text"
-                        }
-                    ]
-                }
-            ],
-            "presets": [
-                {   
-                "categogy": "slider",
+{% schema %}
+    {
+        "name": "Image Slider",
+        "settings": [],
+        "blocks": [
+            {
+                "type": "sliders",
+                "name": "Image Slider",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "images",
+                        "label": "Product Image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "title",
+                        "label": "Title"
+                    },
+                    {
+                        "type": "text",
+                        "id": "subtitle",
+                        "label": "Subtitle"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_link",
+                        "label": "Button Link"
+                    }, 
+                    {
+                        "type": "text",
+                        "id": "button_text",
+                        "label": "Button Text"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
                 "name": "Image Slider"
             }
         ]
     }
-    {% endschema %}
+{% endschema %}
 
+<style>
+    * {
+        font-family: 'Roboto', sans-serif;
+    }
 
-    <style>
-        *{
-            font-family: 'Roboto', sans-serif;
-        }
+    .image-section{
+        position: relative;
+        margin: 0px 35px;
+    }
 
-        .mySwiper{
-            margin: 150px 0px 50px;
-            cursor: grab;
-        }
+    .mySwiper {
+        margin: 50px 0px 50px;
+        cursor: grab;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-        swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
+    .slider_images {
+        width: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+    }
 
-        .image {
-            display: block;
-            max-width: 100%;
-            height: 100%;
-            border-radius: 10px;
-            cursor: pointer;
-        }
+    .image-heading {
+        font-weight: 500;
+        text-align: left;
+        font-size: 22px;
+        cursor: grab;
+    }
 
-        swiper-container {
-            max-width: 100%;
-            height: 100%;
-        }
+    .image-paragraph {
+        text-align: left;
+        opacity: 0.6;
+        font-size: 16px;
+        cursor: grab;
+    }
 
-        .image-heading{
-            font-weight: 500;
-            letter-spacing: 1px;
-            text-align: left;
-            font-size: 22px;
-            cursor: grab;
-        }
+    .image-btn {
+        display: flex;
+        justify-content: left;
+        color: rgb(94, 94, 237);
+        font-weight: 600;
+    }
 
-        .image-paragraph{
-            text-align: left;
-            opacity: 0.6;
-            letter-spacing: 1px;
-            font-size: 14px;
-            cursor: grab;
-        }
+    .left-prev, .right-next{
+        position: absolute;
+        top: 40%;
+        background-color: white;
+        color: black;
+        border: none;
+        padding: 4px 14px;
+        cursor: pointer;
+        z-index: 1;
+        border-radius: 50%;
+        vertical-align: middle; 
+        font-size: 24px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
 
-        .image-btn{
-            display: flex;
-            justify-content: left;
-            color: rgb(94, 94, 237);
-            font-weight: 600;
-        }
+    .left-prev{
+        left: -18px;    
+    }
 
-        .prev1{
-            position: absolute;
-            transform: translateY(-50%);
-            background-color: white;
-            color: black;
-            border: none;
-            padding: 10px 15px;
-            cursor: pointer;
-            z-index: 1;
-            top: 45%;
-            border-radius: 50%;
-            font-size: 16px;
-            left: 10px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        } 
-        
-        .next1 {
-            position: absolute;
-            transform: translateY(-50%);
-            background-color: white;
-            color: black;
-            border: none;
-            padding: 10px 15px;
-            cursor: pointer;
-            z-index: 1;
-            top: 45%;
-            border-radius: 50%;
-            font-size: 16px;
-            right: 10px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
+    .right-next{
+        right: -18px;
+    }
 
-        @media (max-width:1700px){
-            .image-container{
-                max-width: 100%;
-            }
-        }
-    </style>
+</style>
 
-    <script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    </script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
