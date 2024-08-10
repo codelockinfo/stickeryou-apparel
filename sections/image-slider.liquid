@@ -1,64 +1,42 @@
 <swiper-container class="mySwiper" slides-per-view="2.5" space-between="30">
-    <swiper-slide>
-        <div class="image-container" >
-            {% comment %} {%- if section.settings.images -%} {% endcomment %}
-                <img src="https://us.bombayshirts.com/cdn/shop/files/new_arrivals_3856d195-54a4-4b43-b91c-6b3ecc6b61fe_800x.jpg?v=1711795856" class='image'">
-            {% comment %} {%- endif -%} {% endcomment %}
-            <h2 class="image-heading">{{ section.settings.title }}</h2>
-            <p class="image-paragraph">{{ section.settings.subtitle }}</p>
-            {%- if section.settings.button_link -%}
-                <a href="{{ section.settings.button_link }}" class="image-btn">{{ section.settings.button_text }}</a>
-            {%- endif -%}
-        </div>
-    </swiper-slide>
-    <swiper-slide class="image-container">
-        <div class="image-container">
-            {% comment %} {%- if section.settings.images != blank -%} {% endcomment %}
-                <img src="https://us.bombayshirts.com/cdn/shop/files/customer_favs_800x.jpg?v=1706703018" class='image'">
-            {% comment %} {%- endif -%} {% endcomment %}
-            <h2 class="image-heading">{{ section.settings.title }}</h2>
-            <p class="image-paragraph">{{ section.settings.subtitle }}</p>
-            {%- if section.settings.button_link != blank -%}
-                <a href="{{ section.settings.button_link }}" class="image-btn">{{ section.settings.button_text }}</a>
-            {%- endif -%}
-        </div>
-    </swiper-slide>
-    <swiper-slide class="image-container">
-        <div class="image-container">
-            {% comment %} {%- if section.settings.images != blank -%} {% endcomment %}
-                <img src="https://us.bombayshirts.com/cdn/shop/files/weekend_800x.jpg?v=1706703019" class='image'">
-            {% comment %} {%- endif -%} {% endcomment %}
-            <h2 class="image-heading">{{ section.settings.title }}</h2>
-            <p class="image-paragraph">{{ section.settings.subtitle }}</p>
-            {%- if section.settings.button_link != blank -%}
-                <a href="{{ section.settings.button_link }}" class="image-btn">{{ section.settings.button_text }}</a>
-            {%- endif -%}
-        </div>
-    </swiper-slide>
+    {%- for product in collection.blocks -%}
+        <swiper-slide>
+            <div class="image-container" >
+                {%- if block.settings.images ! -%}
+                    <img src="{{ section.settings.images | img_url: 'shirts' }} class='image'">
+                {%- endif -%}
+                <h2 class="image-heading">
+                    {{ block.settings.title }}
+                </h2>
+                <p class="image-paragraph">
+                    {{ block.settings.subtitle }}
+                </p>
+                {%- if block.settings.button_link -%}
+                    <a href="{{ block.settings.button_link }}" class="image-btn">
+                        {{ block.settings.button_text }}
+                    </a>
+                {%- endif -%}
+            </div>
+        </swiper-slide>
+    {%- endfor -%}
 </swiper-container>
-<div class="btn-container">
+{% comment %} <div class="btn-container">
     <button class="prev1">❮</button>
     <button class="next1">❯</button>
-</div> 
+</div>  {% endcomment %}
 
 
     {% schema %}
         {
             "name": "Image Slider",
-            "max_blocks": 3,
             "settings": [
-                
+               
             ],
             "blocks": [
                 {
-                    "type": "collection",
-                    "name": "Image Slide",
+                    "type": "text",
+                    "name": "Image Slider",
                     "settings": [
-                        {
-                            "type": "collection",
-                            "id": "collection_slider",
-                            "label": "Slider"
-                        },
                         {
                             "type": "image_picker",
                             "id": "images",
