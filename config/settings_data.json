@@ -1079,6 +1079,15 @@
               "staricon": "<i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i>",
               "cparagraph": "\"Hands-on customer service in remote measurement with explanations and relatively timely deliveries have made me a repeat customer for my dress shirt needs.\""
             }
+          },
+          "text_tGQwhD": {
+            "type": "text",
+            "settings": {
+              "cimg": "shopify:\/\/shop_images\/Group_34418.svg",
+              "cname": "Vivek",
+              "staricon": "<i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\" style=\"color: #cccccc;\"><\/i>",
+              "cparagraph": "\"This company seems to value their customer service, and it shows!\""
+            }
           }
         },
         "block_order": [
@@ -1087,7 +1096,8 @@
           "text_y7j6ce",
           "text_xbpB69",
           "text_jTRbiV",
-          "text_Tw44jV"
+          "text_Tw44jV",
+          "text_tGQwhD"
         ],
         "settings": {
           "sheading": "Testimonials",
