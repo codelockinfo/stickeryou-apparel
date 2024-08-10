@@ -1,19 +1,19 @@
 <swiper-container class="mySwiper" slides-per-view="2.5" space-between="30">
-    {%- for product in collection.blocks -%}
+    {%- for product in section.blocks -%}
         <swiper-slide>
-            <div class="image-container" >
-                {%- if block.settings.images ! -%}
-                    <img src="{{ section.settings.images | img_url: 'shirts' }} class='image'">
+            <div class="image-container">
+                {%- if section.settings.images ! -%}
+                    <img src="{{ section.settings.images | img_url: 'products' }} class='image'">
                 {%- endif -%}
                 <h2 class="image-heading">
-                    {{ block.settings.title }}
+                    {{ section.settings.title }}
                 </h2>
                 <p class="image-paragraph">
-                    {{ block.settings.subtitle }}
+                    {{ section.settings.subtitle }}
                 </p>
-                {%- if block.settings.button_link -%}
-                    <a href="{{ block.settings.button_link }}" class="image-btn">
-                        {{ block.settings.button_text }}
+                {%- if section.settings.button_link -%}
+                    <a href="{{ section.settings.button_link }}" class="image-btn">
+                        {{ section.settings.button_text }}
                     </a>
                 {%- endif -%}
             </div>
@@ -30,11 +30,10 @@
         {
             "name": "Image Slider",
             "settings": [
-               
             ],
             "blocks": [
                 {
-                    "type": "text",
+                    "type": "sliders",
                     "name": "Image Slider",
                     "settings": [
                         {
@@ -170,4 +169,10 @@
         }
     </style>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('swiper-slide', {
+            slidesPerView: 2.5,
+            spaceBetween: 10,
+        })
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    </script>
