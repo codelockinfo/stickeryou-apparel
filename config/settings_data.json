@@ -1088,6 +1088,15 @@
               "staricon": "<i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\" style=\"color: #cccccc;\"><\/i>",
               "cparagraph": "\"This company seems to value their customer service, and it shows!\""
             }
+          },
+          "text_H9FYhg": {
+            "type": "text",
+            "settings": {
+              "cimg": "shopify:\/\/shop_images\/Group_34422.svg",
+              "cname": "Michael",
+              "staricon": "<i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i>",
+              "cparagraph": "\"I'm so happy I was introduced to BSC. I've used two other places and BSC wins for quality, production speed and pricing.\""
+            }
           }
         },
         "block_order": [
@@ -1097,7 +1106,8 @@
           "text_xbpB69",
           "text_jTRbiV",
           "text_Tw44jV",
-          "text_tGQwhD"
+          "text_tGQwhD",
+          "text_H9FYhg"
         ],
         "settings": {
           "sheading": "Testimonials",
