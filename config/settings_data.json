@@ -776,6 +776,7 @@
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/USA_Website_1200x_54552a35-6438-486d-8857-09c6ea9b41e7.png",
+              "mobile_image": "shopify:\/\/shop_images\/usa_phone_x800_9572d0e4-2111-4550-b84e-7a3d34c82dcf.png",
               "apply_overlay": false,
               "content_position": "bottomLeft",
               "subheading": "New custom-made shirts for the season.",
