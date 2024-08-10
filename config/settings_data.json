@@ -1065,9 +1065,10 @@
           "text_jTRbiV": {
             "type": "text",
             "settings": {
-              "cname": "",
-              "staricon": "",
-              "cparagraph": ""
+              "cimg": "shopify:\/\/shop_images\/testimonial.svg",
+              "cname": "David",
+              "staricon": "<i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i>",
+              "cparagraph": "\"High quality, fully customizable shirts made to order, and at an affordable price! The service is absolutely top-notch.\""
             }
           }
         },
