@@ -3,7 +3,7 @@
         <swiper-slide>
             <div class="image-container">
                 {%- if section.settings.images ! -%}
-                    <img src="{{ section.settings.images | img_url: 'products' }} class='image'">
+                    <img src="{{ section.settings.images | img_url: 'products' }}" class="image">
                 {%- endif -%}
                 <h2 class="image-heading">
                     {{ section.settings.title }}
@@ -170,9 +170,5 @@
     </style>
 
     <script>
-        var swiper = new Swiper('swiper-slide', {
-            slidesPerView: 2.5,
-            spaceBetween: 10,
-        })
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     </script>
