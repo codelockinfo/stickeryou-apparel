@@ -1,42 +1,45 @@
 <div class="testimonial_section">
   <div class="container">
     <div class="testimonial_header">
-      <h1 class="testi_h1">{{section.settings.sheading}}</h1>
-      <p class="testi_p">{{section.settings.subheading}}</p>
+      <h1 class="testi_h1">{{ section.settings.sheading }}</h1>
+      <p class="testi_p">{{ section.settings.subheading }}</p>
     </div>
     <div class="testimonial_container">
       <div class="g_reviews">
         {% if section.settings.startimg != blank %}
-        <div class="review_img_box">
-          <img src="{{section.settings.startimg | img_url: 'master' }}" alt="">
-        </div>
-      {% endif %}
-        <a href="{{section.settings.linkurl}}" target="_blank">{{section.settings.linktext}}</a>
+          <div class="review_img_box">
+            <img src="{{section.settings.startimg | img_url: 'master' }}" alt="">
+          </div>
+        {% endif %}
+        <a href="{{section.settings.linkurl}}" target="_blank">{{ section.settings.linktext }}</a>
       </div>
     </div>
     <div class="swiper testiSlider">
-      <div class="swiper-wrapper">  
+      <div class="swiper-wrapper">
         {%- for block in section.blocks -%}
-        <div class="swiper-slide">
-          <div class="testimonial_content_box">
-            {% if block.settings.cimg != blank %}
-            <div class="client_detail">
-              <div class="client_img">
-                <img src="{{ block.settings.cimg | img_url: 'master' }}"
-                  class="client_img" alt="">
-              </div>
-              <div class="client_name">
-                <h3 class="client_h3">{{block.settings.cname}}</h3>
-                <div class="star_icon">
-                  {{block.settings.staricon}}
+          <div class="swiper-slide">
+            <div class="testimonial_content_box">
+              {% if block.settings.cimg != blank %}
+                <div class="client_detail">
+                  <div class="client_img">
+                    <img
+                      src="{{ block.settings.cimg | img_url: 'master' }}"
+                      class="client_img"
+                      alt=""
+                    >
+                  </div>
+                  <div class="client_name">
+                    <h3 class="client_h3">{{ block.settings.cname }}</h3>
+                    <div class="star_icon">
+                      {{ block.settings.staricon }}
+                    </div>
+                  </div>
                 </div>
-              </div>
+              {% endif %}
+              <p class="client_p">{{ block.settings.cparagraph }}</p>
             </div>
-          {% endif %}
-            <p class="client_p">{{block.settings.cparagraph}}</p>
           </div>
-        </div>
-      {% endfor %}
+        {% endfor %}
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
@@ -46,75 +49,75 @@
 
 {% schema %}
 {
-"name": "Custom testimonial",
-"settings": [
-  {
-    "type": "text",
-    "id": "sheading",
-    "label": "Section heading"
-  },
-  {
-    "type": "text",
-    "id": "subheading",
-    "label": "Section subheading"
-  },
-  {
-    "type": "image_picker",
-    "id": "startimg",
-    "label": "Star img"
-  },
-  {
-    "type": "text",
-    "id": "linktext",
-    "label": "Link text"
-  },
-  {
-    "type": "url",
-    "id": "linkurl",
-    "label": "link"
-  }
-],
-"blocks": [
-  {
-    "name": "Testimonial slider",
-    "type": "text",
-    "settings": [
-       {
-         "type": "image_picker",
-         "id": "cimg",
-         "label": "Client img"
-       },
-       {
-         "type": "text",
-         "id": "cname",
-         "label": "Client name"
-       },
-       {
-         "type": "html",
-         "id": "staricon",
-         "label": "Star icon use fa fa "
-       },
-       {
-         "type": "text",
-         "id": "cparagraph",
-         "label": "Client review"
-       }
-    ]
-  }
-],
-"presets": [
-{
-"name": "Custom testimonial",
-"settings": {}
-}
-]
+  "name": "Custom testimonial",
+  "settings": [
+    {
+      "type": "text",
+      "id": "sheading",
+      "label": "Section heading"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Section subheading"
+    },
+    {
+      "type": "image_picker",
+      "id": "startimg",
+      "label": "Star img"
+    },
+    {
+      "type": "text",
+      "id": "linktext",
+      "label": "Link text"
+    },
+    {
+      "type": "url",
+      "id": "linkurl",
+      "label": "link"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Testimonial slider",
+      "type": "text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "cimg",
+          "label": "Client img"
+        },
+        {
+          "type": "text",
+          "id": "cname",
+          "label": "Client name"
+        },
+        {
+          "type": "html",
+          "id": "staricon",
+          "label": "Star icon use fa fa "
+        },
+        {
+          "type": "text",
+          "id": "cparagraph",
+          "label": "Client review"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom testimonial",
+      "settings": {}
+    }
+  ]
 }
 {% endschema %}
 
 <script>
   var swiper = new Swiper('.testiSlider', {
     slidesPerView: 3,
-    spaceBetween: 10,
+    spaceBetween: 0,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -126,23 +129,23 @@
     breakpoints: {
       375: {
         slidesPerView: 1.2,
-        spaceBetween: 20,
+        spaceBetween: 0,
       },
       600: {
         slidesPerView: 1.2,
-        spaceBetween: 20,
+        spaceBetween: 0,
       },
       700: {
         slidesPerView: 2,
-        spaceBetween: 20,
+        spaceBetween: 0,
       },
       991: {
         slidesPerView: 2,
-        spaceBetween: 20,
+        spaceBetween: 0,
       },
       1024: {
         slidesPerView: 3,
-        spaceBetween: 30,
+        spaceBetween: 0,
       },
     },
     on: {
