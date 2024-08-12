@@ -182,13 +182,14 @@
         ],
         "settings": {
           "use_sticky_header": true,
-          "logo": "shopify:\/\/shop_images\/Asset_1.svg",
+          "logo": "shopify:\/\/shop_images\/stickeryou.png",
           "logo_max_width": 140,
           "navigation_menu": "",
           "navigation_style": "inline",
           "enable_transparent_header": true,
           "enable_transparent_header_collection": false,
-          "transparent_text_color": "#ffffff"
+          "transparent_text_color": "#ffffff",
+          "transparent_logo": "shopify:\/\/shop_images\/stickeryou.png"
         }
       },
       "footer": {
