@@ -305,7 +305,7 @@
           "featured-collection-0": {
             "type": "collection",
             "settings": {
-              "collection": "bluetooth-headphone",
+              "collection": "t_shirt",
               "title": "",
               "grid_items_count": 16,
               "button_text": "View all products"
@@ -315,10 +315,9 @@
         "block_order": [
           "featured-collection-0"
         ],
-        "disabled": true,
         "settings": {
           "title": "hot summer sales of the week",
-          "layout_mode": "grid",
+          "layout_mode": "carousel",
           "show_product_info": true,
           "show_color_swatch": false,
           "grid_mobile_items_per_row": "2",
@@ -505,32 +504,6 @@
           "apparition_delay": 5
         }
       },
-      "1536065219503": {
-        "type": "image-with-text-block",
-        "disabled": true,
-        "settings": {
-          "background": "#515c63",
-          "text_color": "#ffffff",
-          "block_size": "normal",
-          "title": "TRENDING JEWELRY",
-          "content": "<p>Show off your personality with meaningful, eco-conscious expandable bracelets, necklaces, rings, and earrings that empower the light within&nbsp; you.<\/p>",
-          "button_label": "SHOP NOW",
-          "button_link": "shopify:\/\/collections\/jewelry",
-          "show_parallax": true
-        }
-      },
-      "1536065970902": {
-        "type": "featured-collections",
-        "disabled": true,
-        "settings": {
-          "title": "Staff pick of the week!",
-          "layout_mode": "carousel",
-          "show_product_info": true,
-          "show_color_swatch": false,
-          "grid_mobile_items_per_row": "2",
-          "grid_desktop_items_per_row": 4
-        }
-      },
       "interiors": {
         "type": "interiors",
         "blocks": {
@@ -557,15 +530,6 @@
           "apply_overlay": true,
           "text_color": "#ffffff",
           "button_color": "#363636"
-        }
-      },
-      "1655005732ee88d13d": {
-        "type": "instafeed",
-        "disabled": true,
-        "settings": {
-          "heading_size": 20,
-          "feed_width": 100,
-          "html_area": ""
         }
       },
       "slideshow_pLAy9m": {
@@ -920,16 +884,13 @@
     },
     "content_for_index": [
       "slideshow_pLAy9m",
+      "featured-collections",
       "details_slider_pFyDx4",
       "newslogo_6Jczbn",
       "count_section_GNaxNy",
       "testimonial_slider_83x97L",
       "video_section_fnfxBN",
-      "image_with_text_overlay_GaDy6J",
-      "featured-collections",
-      "1536065219503",
-      "1536065970902",
-      "1655005732ee88d13d"
+      "image_with_text_overlay_GaDy6J"
     ]
   },
   "presets": {
