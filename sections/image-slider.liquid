@@ -4,7 +4,7 @@
         <swiper-slide>
             <div class="image-container">
                 {% if block.settings.images != blank %}
-                    <img src="{{ block.settings.images | img_url: 'products' }}" class="slider_images">
+                    <img src="{{ block.settings.images | img_url: 'master' }}" class="slider_images">
                 {% endif %}
                 <h2 class="image-heading">
                     {{ block.settings.title }}
