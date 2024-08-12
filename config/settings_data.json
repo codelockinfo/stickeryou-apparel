@@ -624,7 +624,7 @@
           "imgbuttontext": "View All",
           "imgtexturl": "shopify:\/\/collections\/frontpage",
           "section_size": "large",
-          "image": "shopify:\/\/shop_images\/Store_Banner_1200x_5f9b1bf2-dc2c-4e05-be50-c38a542dfd36.jpg",
+          "image": "shopify:\/\/shop_images\/wireframe0003.jpg",
           "text_color": "#ffffff",
           "overlay_color": "#000000",
           "overlay_opacity": 23,
@@ -768,6 +768,12 @@
               "contentp": "Each piece is produced only for you, after you've placed your order."
             }
           },
+          "text_t63r8W": {
+            "type": "text",
+            "settings": {
+              "contentp": ""
+            }
+          },
           "text_HbrnJP": {
             "type": "text",
             "settings": {
@@ -783,6 +789,7 @@
           "text_p96dYw",
           "text_wLqKXa",
           "text_Ye8tjm",
+          "text_t63r8W",
           "text_HbrnJP"
         ],
         "settings": {
