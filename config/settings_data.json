@@ -143,7 +143,7 @@
           "mega_menu_GDzkJU"
         ],
         "settings": {
-          "logo": "shopify:\/\/shop_images\/Asset_1.svg",
+          "logo": "shopify:\/\/shop_images\/stickeryou.png",
           "logo_max_width": 140,
           "primary_menu": "",
           "secondary_menu": "",
@@ -182,13 +182,14 @@
         ],
         "settings": {
           "use_sticky_header": true,
-          "logo": "shopify:\/\/shop_images\/Asset_1.svg",
+          "logo": "shopify:\/\/shop_images\/stickeryou.png",
           "logo_max_width": 140,
           "navigation_menu": "",
           "navigation_style": "inline",
           "enable_transparent_header": true,
           "enable_transparent_header_collection": false,
-          "transparent_text_color": "#ffffff"
+          "transparent_text_color": "#ffffff",
+          "transparent_logo": "shopify:\/\/shop_images\/stickeryou.png"
         }
       },
       "footer": {
@@ -213,12 +214,30 @@
             "settings": {
               "menu": ""
             }
+          },
+          "text_URkLUC": {
+            "type": "text",
+            "disabled": true,
+            "settings": {
+              "title": "About the shop",
+              "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+              "show_social_media": true
+            }
+          },
+          "newsletter_atKjPn": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Newsletter",
+              "content": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+            }
           }
         },
         "block_order": [
           "footer-1",
           "footer-0",
-          "1536066864265"
+          "1536066864265",
+          "text_URkLUC",
+          "newsletter_atKjPn"
         ],
         "settings": {
           "show_payment_methods": true
@@ -287,9 +306,9 @@
           "featured-collection-0": {
             "type": "collection",
             "settings": {
-              "collection": "bluetooth-headphone",
+              "collection": "t_shirt",
               "title": "",
-              "grid_items_count": 16,
+              "grid_items_count": 26,
               "button_text": "View all products"
             }
           }
@@ -297,13 +316,12 @@
         "block_order": [
           "featured-collection-0"
         ],
-        "disabled": true,
         "settings": {
-          "title": "hot summer sales of the week",
-          "layout_mode": "grid",
+          "title": "",
+          "layout_mode": "carousel",
           "show_product_info": true,
           "show_color_swatch": false,
-          "grid_mobile_items_per_row": "2",
+          "grid_mobile_items_per_row": "1",
           "grid_desktop_items_per_row": 4
         }
       },
@@ -487,251 +505,6 @@
           "apparition_delay": 5
         }
       },
-      "1536065219503": {
-        "type": "image-with-text-block",
-        "disabled": true,
-        "settings": {
-          "background": "#515c63",
-          "text_color": "#ffffff",
-          "block_size": "normal",
-          "title": "TRENDING JEWELRY",
-          "content": "<p>Show off your personality with meaningful, eco-conscious expandable bracelets, necklaces, rings, and earrings that empower the light within&nbsp; you.<\/p>",
-          "button_label": "SHOP NOW",
-          "button_link": "shopify:\/\/collections\/jewelry",
-          "show_parallax": true
-        }
-      },
-      "1536065842202": {
-        "type": "testimonials",
-        "blocks": {
-          "1536065842202-2": {
-            "type": "testimonial",
-            "settings": {
-              "quote": "<p>I love everything in here, l took my time and searched through this shop and l really love their quality products.<\/p>"
-            }
-          },
-          "1536065842202-1": {
-            "type": "testimonial",
-            "settings": {
-              "quote": "<p>I always want to give a touch to my wrist with luxury watches, l found the perfect and affordable watch on this web shop.<\/p>"
-            }
-          },
-          "1536065842202-0": {
-            "type": "testimonial",
-            "settings": {
-              "quote": "<p>I was searching on Google for beauty products and l got exactly what l needed here, l recommend<\/p>"
-            }
-          },
-          "1536067220146": {
-            "type": "testimonial",
-            "settings": {
-              "quote": "<p>Excellent services, is my first time buying from this store, l got my product in good shape wit very convenient process.<\/p>"
-            }
-          }
-        },
-        "block_order": [
-          "1536065842202-2",
-          "1536065842202-1",
-          "1536065842202-0",
-          "1536067220146"
-        ],
-        "disabled": true,
-        "settings": {
-          "autoplay": true,
-          "cycle_speed": 5,
-          "background": "#31648b",
-          "text_color": "#f8f8f8"
-        }
-      },
-      "1536065970902": {
-        "type": "featured-collections",
-        "blocks": {
-          "1536066003542": {
-            "type": "collection",
-            "settings": {
-              "collection": "jewelry",
-              "title": "",
-              "grid_items_count": 8,
-              "button_text": "View all products"
-            }
-          },
-          "1536065970902-0": {
-            "type": "collection",
-            "settings": {
-              "collection": "health-and-beauty",
-              "title": "HEALTH & BEAUTY",
-              "grid_items_count": 8,
-              "button_text": "View all products"
-            }
-          }
-        },
-        "block_order": [
-          "1536066003542",
-          "1536065970902-0"
-        ],
-        "disabled": true,
-        "settings": {
-          "title": "Staff pick of the week!",
-          "layout_mode": "carousel",
-          "show_product_info": true,
-          "show_color_swatch": false,
-          "grid_mobile_items_per_row": "2",
-          "grid_desktop_items_per_row": 4
-        }
-      },
-      "1536067011368": {
-        "type": "newsletter",
-        "disabled": true,
-        "settings": {
-          "section_size": "small",
-          "text_color": "#ffffff",
-          "button_color": "#000000",
-          "subheading": "Keep updated",
-          "title": "Newsletter",
-          "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
-        }
-      },
-      "1649075007f82101d6": {
-        "type": "slider",
-        "blocks": {
-          "050c64cb-2f28-47fa-81ae-fc5fc76a8928": {
-            "type": "slide",
-            "settings": {
-              "imgheading": ""
-            }
-          },
-          "3110fafa-fe3b-4a48-91bc-aab70d0d2e22": {
-            "type": "slide",
-            "settings": {
-              "imgheading": ""
-            }
-          },
-          "ce4e4197-621d-4cc5-a312-717bb4e35f22": {
-            "type": "slide",
-            "settings": {
-              "imgheading": ""
-            }
-          }
-        },
-        "block_order": [
-          "050c64cb-2f28-47fa-81ae-fc5fc76a8928",
-          "3110fafa-fe3b-4a48-91bc-aab70d0d2e22",
-          "ce4e4197-621d-4cc5-a312-717bb4e35f22"
-        ],
-        "disabled": true,
-        "settings": {
-        }
-      },
-      "164907614468bd4c05": {
-        "type": "interiors",
-        "blocks": {
-          "e28db402-4745-456c-8d07-9cf2430243c2": {
-            "type": "block",
-            "settings": {
-              "heading": "demo",
-              "link": ""
-            }
-          },
-          "b2758bdb-217a-4563-96fe-b2768379e6a8": {
-            "type": "block",
-            "settings": {
-              "heading": "demo2",
-              "link": ""
-            }
-          },
-          "a1e458a2-e135-44c2-9e89-a5926fb3bd2f": {
-            "type": "block",
-            "settings": {
-              "heading": "demo3",
-              "link": ""
-            }
-          },
-          "474ed100-a2a1-403f-b1cc-aa5258855ccc": {
-            "type": "block",
-            "settings": {
-              "heading": "demo4",
-              "link": ""
-            }
-          },
-          "d7c47755-1ab5-455f-8085-d830292b4e5f": {
-            "type": "block",
-            "settings": {
-              "heading": "demo5",
-              "link": ""
-            }
-          },
-          "5ba14b54-01e6-462d-8105-a1c71d887eea": {
-            "type": "block",
-            "settings": {
-              "heading": "demo6",
-              "link": ""
-            }
-          }
-        },
-        "block_order": [
-          "e28db402-4745-456c-8d07-9cf2430243c2",
-          "b2758bdb-217a-4563-96fe-b2768379e6a8",
-          "a1e458a2-e135-44c2-9e89-a5926fb3bd2f",
-          "474ed100-a2a1-403f-b1cc-aa5258855ccc",
-          "d7c47755-1ab5-455f-8085-d830292b4e5f",
-          "5ba14b54-01e6-462d-8105-a1c71d887eea"
-        ],
-        "disabled": true,
-        "settings": {
-        }
-      },
-      "1649139500787f0b9d": {
-        "type": "slidershow-image",
-        "blocks": {
-          "f17983b1-c1b6-4e0f-9f29-d7f83bf14d1a": {
-            "type": "slide",
-            "settings": {
-              "imgheading": ""
-            }
-          },
-          "8524ce2d-6d4e-418c-97b9-5e4e4889b98d": {
-            "type": "slide",
-            "settings": {
-              "imgheading": ""
-            }
-          },
-          "2a76a34b-4986-4974-a4c8-00890cccde5a": {
-            "type": "slide",
-            "settings": {
-              "imgheading": ""
-            }
-          },
-          "0c9252a9-6f3b-4cbe-8af6-3a228f931fac": {
-            "type": "slide",
-            "settings": {
-              "imgheading": ""
-            }
-          },
-          "18b5c10a-993f-4fd8-a973-fd9bcb0e526e": {
-            "type": "slide",
-            "settings": {
-              "imgheading": ""
-            }
-          },
-          "6ef1d9ee-a50d-4202-a424-46cdc31676cb": {
-            "type": "slide",
-            "settings": {
-              "imgheading": ""
-            }
-          }
-        },
-        "block_order": [
-          "f17983b1-c1b6-4e0f-9f29-d7f83bf14d1a",
-          "8524ce2d-6d4e-418c-97b9-5e4e4889b98d",
-          "2a76a34b-4986-4974-a4c8-00890cccde5a",
-          "0c9252a9-6f3b-4cbe-8af6-3a228f931fac",
-          "18b5c10a-993f-4fd8-a973-fd9bcb0e526e",
-          "6ef1d9ee-a50d-4202-a424-46cdc31676cb"
-        ],
-        "disabled": true,
-        "settings": {
-        }
-      },
       "interiors": {
         "type": "interiors",
         "blocks": {
@@ -760,27 +533,19 @@
           "button_color": "#363636"
         }
       },
-      "1655005732ee88d13d": {
-        "type": "instafeed",
-        "disabled": true,
-        "settings": {
-          "heading_size": 20,
-          "feed_width": 100,
-          "html_area": ""
-        }
-      },
       "slideshow_pLAy9m": {
         "type": "slideshow",
         "blocks": {
           "image_eDktL9": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/USA_Website_1200x_54552a35-6438-486d-8857-09c6ea9b41e7.png",
+              "image": "shopify:\/\/shop_images\/Brown_and_Beige_Simple_Cyber_Monday_Sale_Outdoor_Banner.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/usa_phone_x800_9572d0e4-2111-4550-b84e-7a3d34c82dcf.png",
               "apply_overlay": false,
-              "content_position": "bottomLeft",
-              "subheading": "New custom-made shirts for the season.",
-              "title": "Summer Ready",
-              "button_1_text": "Shop Collection",
+              "content_position": "middleCenter",
+              "subheading": "",
+              "title": "",
+              "button_1_text": "",
               "button_1_link": "",
               "button_2_text": "",
               "button_2_link": ""
@@ -791,7 +556,7 @@
           "image_eDktL9"
         ],
         "settings": {
-          "show_fullscreen": true,
+          "show_fullscreen": false,
           "show_arrow": false,
           "autoplay": true,
           "cycle_speed": 5,
@@ -859,7 +624,7 @@
           "imgbuttontext": "View All",
           "imgtexturl": "shopify:\/\/collections\/frontpage",
           "section_size": "large",
-          "image": "shopify:\/\/shop_images\/Store_Banner_1200x_5f9b1bf2-dc2c-4e05-be50-c38a542dfd36.jpg",
+          "image": "shopify:\/\/shop_images\/wireframe0003.jpg",
           "text_color": "#ffffff",
           "overlay_color": "#000000",
           "overlay_opacity": 23,
@@ -1003,6 +768,12 @@
               "contentp": "Each piece is produced only for you, after you've placed your order."
             }
           },
+          "text_t63r8W": {
+            "type": "text",
+            "settings": {
+              "contentp": ""
+            }
+          },
           "text_HbrnJP": {
             "type": "text",
             "settings": {
@@ -1018,6 +789,7 @@
           "text_p96dYw",
           "text_wLqKXa",
           "text_Ye8tjm",
+          "text_t63r8W",
           "text_HbrnJP"
         ],
         "settings": {
@@ -1065,9 +837,37 @@
           "text_jTRbiV": {
             "type": "text",
             "settings": {
-              "cname": "",
-              "staricon": "",
-              "cparagraph": ""
+              "cimg": "shopify:\/\/shop_images\/testimonial.svg",
+              "cname": "David",
+              "staricon": "<i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i>",
+              "cparagraph": "\"High quality, fully customizable shirts made to order, and at an affordable price! The service is absolutely top-notch.\""
+            }
+          },
+          "text_Tw44jV": {
+            "type": "text",
+            "settings": {
+              "cimg": "shopify:\/\/shop_images\/Group_34416.svg",
+              "cname": "Matthew",
+              "staricon": "<i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i>",
+              "cparagraph": "\"Hands-on customer service in remote measurement with explanations and relatively timely deliveries have made me a repeat customer for my dress shirt needs.\""
+            }
+          },
+          "text_tGQwhD": {
+            "type": "text",
+            "settings": {
+              "cimg": "shopify:\/\/shop_images\/Group_34418.svg",
+              "cname": "Vivek",
+              "staricon": "<i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\" style=\"color: #cccccc;\"><\/i>",
+              "cparagraph": "\"This company seems to value their customer service, and it shows!\""
+            }
+          },
+          "text_H9FYhg": {
+            "type": "text",
+            "settings": {
+              "cimg": "shopify:\/\/shop_images\/Group_34422.svg",
+              "cname": "Michael",
+              "staricon": "<i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i><i class=\"fa-solid fa-star\"><\/i>",
+              "cparagraph": "\"I'm so happy I was introduced to BSC. I've used two other places and BSC wins for quality, production speed and pricing.\""
             }
           }
         },
@@ -1076,7 +876,10 @@
           "text_TLhNDK",
           "text_y7j6ce",
           "text_xbpB69",
-          "text_jTRbiV"
+          "text_jTRbiV",
+          "text_Tw44jV",
+          "text_tGQwhD",
+          "text_H9FYhg"
         ],
         "settings": {
           "sheading": "Testimonials",
@@ -1089,23 +892,13 @@
     },
     "content_for_index": [
       "slideshow_pLAy9m",
+      "featured-collections",
       "details_slider_pFyDx4",
       "newslogo_6Jczbn",
       "count_section_GNaxNy",
       "testimonial_slider_83x97L",
       "video_section_fnfxBN",
-      "image_with_text_overlay_GaDy6J",
-      "featured-collections",
-      "1536065219503",
-      "shop-the-look",
-      "collection-list",
-      "1536065970902",
-      "1536065842202",
-      "1536067011368",
-      "1649075007f82101d6",
-      "164907614468bd4c05",
-      "1649139500787f0b9d",
-      "1655005732ee88d13d"
+      "image_with_text_overlay_GaDy6J"
     ]
   },
   "presets": {
