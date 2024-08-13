@@ -44,8 +44,8 @@
     {% endfor %}
     </swiper-container> 
     <div class="btn-container">
-        <button class="left-prev">❮</button>
-        <button class="right-next">❯</button>
+        <button class="left-prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="right-next"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
 </section>
 
@@ -148,17 +148,20 @@
 
     .left-prev, .right-next{
         position: absolute;
-        top: 40%;
-        background-color: white;
-        color: black;
+        top: 36%;
+        background: white;
         border: none;
-        padding: 4px 14px;
         cursor: pointer;
         z-index: 1;
+        font-size: 17px;
         border-radius: 50%;
-        vertical-align: middle; 
-        font-size: 24px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center; 
+        box-shadow: 0 2px 10px #36363626;
+        width: 42px;
+        height: 42px;
+        line-height: 0;
+        transform: scale(1.001);
+        overflow: hidden;
     }
 
     .left-prev{
@@ -167,6 +170,36 @@
 
     .right-next{
         right: -18px;
+    }
+
+    @media (max-width:1440px){
+        .left-prev, .right-next{
+            top: 30%;
+        }
+    }
+
+    @media (max-width:1024px){
+        .left-prev, .right-next{
+            top: 28%;
+        }
+    }
+
+    @media (max-width:425px){
+        .left-prev, .right-next{
+            top: 24%;
+        }
+    }
+
+    @media (max-width:375px){
+        .left-prev, .right-next{
+            top: 20%;
+        }
+    }
+
+    @media (max-width:320px){
+        .left-prev, .right-next{
+            top: 17%;
+        }
     }
 
 </style>
