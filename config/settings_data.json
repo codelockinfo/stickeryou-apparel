@@ -48,8 +48,8 @@
     "product_show_secondary_image": false,
     "product_info_alignment": "center",
     "product_image_size": "natural",
-    "product_list_horizontal_spacing": "medium",
-    "product_list_vertical_spacing": "small",
+    "product_list_horizontal_spacing": "extra_large",
+    "product_list_vertical_spacing": "extra_large",
     "cart_type": "page",
     "cart_enable_notes": true,
     "cart_show_free_shipping_threshold": false,
@@ -427,7 +427,7 @@
       "collection-template": {
         "type": "collection-template",
         "settings": {
-          "show_collection_info": true,
+          "show_collection_info": false,
           "show_collection_image": true,
           "show_color_swatch": false,
           "collection_image_size": "large",
