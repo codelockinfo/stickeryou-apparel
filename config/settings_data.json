@@ -426,7 +426,7 @@
           "toolbar_position": "top",
           "filter_position": "sidebar",
           "filter_mode": "tag",
-          "show_filter_color_swatch": false,
+          "show_filter_color_swatch": true,
           "filter_menu": "",
           "grid_items_per_page": 16,
           "grid_mobile_items_per_row": "2",
