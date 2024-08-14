@@ -768,12 +768,6 @@
               "contentp": "Each piece is produced only for you, after you've placed your order."
             }
           },
-          "text_t63r8W": {
-            "type": "text",
-            "settings": {
-              "contentp": ""
-            }
-          },
           "text_HbrnJP": {
             "type": "text",
             "settings": {
@@ -789,7 +783,6 @@
           "text_p96dYw",
           "text_wLqKXa",
           "text_Ye8tjm",
-          "text_t63r8W",
           "text_HbrnJP"
         ],
         "settings": {
