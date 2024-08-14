@@ -215,15 +215,6 @@
               "menu": ""
             }
           },
-          "text_URkLUC": {
-            "type": "text",
-            "disabled": true,
-            "settings": {
-              "title": "About the shop",
-              "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
-              "show_social_media": true
-            }
-          },
           "newsletter_atKjPn": {
             "type": "newsletter",
             "settings": {
@@ -236,7 +227,6 @@
           "footer-1",
           "footer-0",
           "1536066864265",
-          "text_URkLUC",
           "newsletter_atKjPn"
         ],
         "settings": {
