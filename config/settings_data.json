@@ -198,21 +198,21 @@
           "footer-1": {
             "type": "links",
             "settings": {
-              "menu": "footer"
-            }
-          },
-          "footer-0": {
-            "type": "text",
-            "settings": {
-              "title": "our services",
-              "content": "<p>We love our customers and we provide them with high quality and best products fro top brands. We offer easy and convenient shipping worldwide.<\/p>",
-              "show_social_media": false
+              "menu": "new-footer-menu"
             }
           },
           "1536066864265": {
             "type": "links",
             "settings": {
-              "menu": ""
+              "menu": "gift-card"
+            }
+          },
+          "text_AAD6MX": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "content": "",
+              "show_social_media": true
             }
           },
           "newsletter_atKjPn": {
@@ -225,8 +225,8 @@
         },
         "block_order": [
           "footer-1",
-          "footer-0",
           "1536066864265",
+          "text_AAD6MX",
           "newsletter_atKjPn"
         ],
         "settings": {
