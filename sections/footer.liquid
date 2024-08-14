@@ -46,11 +46,7 @@
                   <h2 class="Footer__Title Heading u-h6">{{ block.settings.title | escape }}</h2>
                 {%- endif -%}
 
-                {%- if block.settings.content != blank -%}
-                  <div class="Footer__Content Rte">
-                    {{ block.settings.content }}
-                  </div>
-                {%- endif -%}
+              
 
                 {%- form 'customer', id: 'footer-newsletter', class: 'Footer__Newsletter Form' -%}
                   {%- if form.posted_successfully? -%}
@@ -61,8 +57,16 @@
                     {%- endif -%}
 
                     <input type="hidden" name="contact[tags]" value="newsletter">
-                    <input type="email" name="contact[email]" class="Form__Input" aria-label="{{ 'footer.newsletter.input' | t }}" placeholder="{{ 'footer.newsletter.input' | t }}" required>
-                    <button type="submit" class="Form__Submit Button Button--primary">{{ 'footer.newsletter.submit' | t }}</button>
+                    <div class="footer_newsletter">
+                      <input type="email" name="contact[email]" class="footer_email Form__Input" aria-label="{{ 'footer.newsletter.input' | t }}" placeholder="{{ 'footer.newsletter.input' | t }}" required>
+                      <button type="submit" class="footer_news_button footer_submit_button Form__Submit Button Button--primary">{{ 'footer.newsletter.submit' | t }}</button>
+                    </div>
+                    {%- if block.settings.content != blank -%}
+                      <div class="Footer__Content Rte">
+                        {{ block.settings.content }}
+                      </div>
+                    {%- endif -%}
+                    
                   {%- endif -%}
                 {%- endform -%}
             {%- endcase -%}
