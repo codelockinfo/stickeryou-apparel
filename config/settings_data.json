@@ -476,7 +476,7 @@
           "show_payment_button": false,
           "image_size": "small",
           "enable_image_zoom": false,
-          "show_thumbnails": false,
+          "show_thumbnails": true,
           "tab_page_1_handle": "",
           "tab_page_2_handle": "",
           "reviews_enabled": false,
