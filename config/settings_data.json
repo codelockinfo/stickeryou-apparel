@@ -44,12 +44,12 @@
     "show_element_staggering": false,
     "search_mode": "product,article",
     "size_chart_page": "",
-    "product_show_price_on_hover": true,
+    "product_show_price_on_hover": false,
     "product_show_secondary_image": false,
     "product_info_alignment": "center",
     "product_image_size": "natural",
-    "product_list_horizontal_spacing": "medium",
-    "product_list_vertical_spacing": "small",
+    "product_list_horizontal_spacing": "extra_large",
+    "product_list_vertical_spacing": "extra_large",
     "cart_type": "page",
     "cart_enable_notes": true,
     "cart_show_free_shipping_threshold": false,
@@ -198,29 +198,20 @@
           "footer-1": {
             "type": "links",
             "settings": {
-              "menu": "footer"
-            }
-          },
-          "footer-0": {
-            "type": "text",
-            "settings": {
-              "title": "our services",
-              "content": "<p>We love our customers and we provide them with high quality and best products fro top brands. We offer easy and convenient shipping worldwide.<\/p>",
-              "show_social_media": false
+              "menu": "new-footer-menu"
             }
           },
           "1536066864265": {
             "type": "links",
             "settings": {
-              "menu": ""
+              "menu": "gift-card"
             }
           },
-          "text_URkLUC": {
+          "text_AAD6MX": {
             "type": "text",
-            "disabled": true,
             "settings": {
-              "title": "About the shop",
-              "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+              "title": "",
+              "content": "",
               "show_social_media": true
             }
           },
@@ -234,9 +225,8 @@
         },
         "block_order": [
           "footer-1",
-          "footer-0",
           "1536066864265",
-          "text_URkLUC",
+          "text_AAD6MX",
           "newsletter_atKjPn"
         ],
         "settings": {
@@ -427,13 +417,13 @@
       "collection-template": {
         "type": "collection-template",
         "settings": {
-          "show_collection_info": true,
-          "show_collection_image": false,
+          "show_collection_info": false,
+          "show_collection_image": true,
           "show_color_swatch": false,
           "collection_image_size": "large",
           "show_sort_by": true,
-          "show_layout_switch": false,
-          "toolbar_position": "bottom",
+          "show_layout_switch": true,
+          "toolbar_position": "top",
           "filter_position": "sidebar",
           "filter_mode": "tag",
           "show_filter_color_swatch": true,
@@ -768,12 +758,6 @@
               "contentp": "Each piece is produced only for you, after you've placed your order."
             }
           },
-          "text_t63r8W": {
-            "type": "text",
-            "settings": {
-              "contentp": ""
-            }
-          },
           "text_HbrnJP": {
             "type": "text",
             "settings": {
@@ -789,7 +773,6 @@
           "text_p96dYw",
           "text_wLqKXa",
           "text_Ye8tjm",
-          "text_t63r8W",
           "text_HbrnJP"
         ],
         "settings": {
