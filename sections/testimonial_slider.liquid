@@ -22,11 +22,7 @@
               {% if block.settings.cimg != blank %}
                 <div class="client_detail">
                   <div class="client_img">
-                    <img
-                      src="{{ block.settings.cimg | img_url: 'master' }}"
-                      class="client_img"
-                      alt=""
-                    >
+                    <img src="{{ block.settings.cimg | img_url: 'master' }}" class="client_img" alt="">
                   </div>
                   <div class="client_name">
                     <h3 class="client_h3">{{ block.settings.cname }}</h3>
